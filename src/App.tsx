@@ -2,6 +2,7 @@ import Grid from './components/grid';
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
       <h1>Piano Roll</h1>
