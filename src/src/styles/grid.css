@@ -1,0 +1,30 @@
+/* src/styles/grid.css */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    gap: 1px;
+    /* Espacio entre las celdas */
+    background-color: #333;
+    /* Fondo del grid */
+}
+
+.grid-row {
+    display: flex;
+}
+
+.grid-cell {
+    flex: 1;
+    height: 20px;
+    /* Altura de cada celda */
+    background-color: #444;
+    /* Color de las celdas */
+    border: 1px solid #555;
+    /* Bordes de las celdas */
+}
+
+.grid-cell:nth-child(4n) {
+    background-color: #555;
+    /* Cambia el color de las celdas cada 4 columnas para mejorar la visualización */
+}
